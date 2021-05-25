@@ -1,0 +1,81 @@
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav2\PonteVedra\PonteVedra\bin\Debug\netstandard2.0\PonteVedra.deps.json
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav2\PonteVedra\PonteVedra\bin\Debug\netstandard2.0\PonteVedra.dll
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav2\PonteVedra\PonteVedra\bin\Debug\netstandard2.0\ref\PonteVedra.dll
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav2\PonteVedra\PonteVedra\bin\Debug\netstandard2.0\PonteVedra.pdb
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav2\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\PonteVedra.csprojAssemblyReference.cache
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav2\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav2\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav2\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\MenuPrincipal.xaml.g.cs
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav2\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\ModalAyudas.xaml.g.cs
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav2\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\ModalReporteNovedad.xaml.g.cs
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav2\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\PonteVedra.AssemblyInfoInputs.cache
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav2\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\PonteVedra.AssemblyInfo.cs
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav2\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\PonteVedra.dll
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav2\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\ref\PonteVedra.dll
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav2\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\PonteVedra.pdb
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav2\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\PonteVedra.csproj.CoreCompileInputs.cache
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav2\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\bin\Debug\netstandard2.0\PonteVedra.deps.json
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\bin\Debug\netstandard2.0\PonteVedra.dll
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\bin\Debug\netstandard2.0\ref\PonteVedra.dll
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\bin\Debug\netstandard2.0\PonteVedra.pdb
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\bin\Debug\netstandard2.0\Mono.Android.dll
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\bin\Debug\netstandard2.0\Mono.Android.pdb
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\bin\Debug\netstandard2.0\Mono.Android.xml
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\PonteVedra.csprojAssemblyReference.cache
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\MenuPrincipal.xaml.g.cs
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\ModalAyudas.xaml.g.cs
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\ModalReporteNovedad.xaml.g.cs
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\PonteVedra.AssemblyInfoInputs.cache
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\PonteVedra.AssemblyInfo.cs
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\PonteVedra.csproj.CopyComplete
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\PonteVedra.dll
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\ref\PonteVedra.dll
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\PonteVedra.pdb
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\PonteVedra.csproj.CoreCompileInputs.cache
+C:\Users\jesus\source\repos\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\bin\Debug\netstandard2.0\PonteVedra.deps.json
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\bin\Debug\netstandard2.0\PonteVedra.dll
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\bin\Debug\netstandard2.0\ref\PonteVedra.dll
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\bin\Debug\netstandard2.0\PonteVedra.pdb
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\bin\Debug\netstandard2.0\Mono.Android.dll
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\bin\Debug\netstandard2.0\Mono.Android.pdb
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\bin\Debug\netstandard2.0\Mono.Android.xml
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\PonteVedra.csprojAssemblyReference.cache
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\MenuPrincipal.xaml.g.cs
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\ModalAyudas.xaml.g.cs
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\ModalReporteNovedad.xaml.g.cs
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\PonteVedra.AssemblyInfoInputs.cache
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\PonteVedra.AssemblyInfo.cs
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\PonteVedra.csproj.CoreCompileInputs.cache
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\PonteVedra.csproj.CopyComplete
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\PonteVedra.dll
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\ref\PonteVedra.dll
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteVedra\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\PonteVedra.pdb
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteverdi\PonteVedrav3\PonteVedra\PonteVedra\bin\Debug\netstandard2.0\PonteVedra.deps.json
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteverdi\PonteVedrav3\PonteVedra\PonteVedra\bin\Debug\netstandard2.0\PonteVedra.dll
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteverdi\PonteVedrav3\PonteVedra\PonteVedra\bin\Debug\netstandard2.0\ref\PonteVedra.dll
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteverdi\PonteVedrav3\PonteVedra\PonteVedra\bin\Debug\netstandard2.0\PonteVedra.pdb
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteverdi\PonteVedrav3\PonteVedra\PonteVedra\bin\Debug\netstandard2.0\Mono.Android.dll
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteverdi\PonteVedrav3\PonteVedra\PonteVedra\bin\Debug\netstandard2.0\Mono.Android.pdb
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteverdi\PonteVedrav3\PonteVedra\PonteVedra\bin\Debug\netstandard2.0\Mono.Android.xml
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteverdi\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\PonteVedra.csprojAssemblyReference.cache
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteverdi\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteverdi\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteverdi\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\MenuPrincipal.xaml.g.cs
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteverdi\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\ModalAyudas.xaml.g.cs
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteverdi\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\ModalReporteNovedad.xaml.g.cs
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteverdi\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\PonteVedra.AssemblyInfoInputs.cache
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteverdi\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\PonteVedra.AssemblyInfo.cs
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteverdi\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\PonteVedra.csproj.CoreCompileInputs.cache
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteverdi\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteverdi\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\PonteVedra.csproj.CopyComplete
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteverdi\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\PonteVedra.dll
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteverdi\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\ref\PonteVedra.dll
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteverdi\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\PonteVedra.pdb
+C:\Users\desar\Repositorios\Proyectos NET\AppPonteverdi\PonteVedrav3\PonteVedra\PonteVedra\obj\Debug\netstandard2.0\CambioPass.xaml.g.cs

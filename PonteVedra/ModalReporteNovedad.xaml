@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Alarma.ModalReporteNovedad"
+             Title="Reporte de Novedad">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="ToolButNov" Text="Enviar" Order="Primary" Priority="0" Clicked="Button_Clicked_EnviarForm"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Editor x:Name="EditNovedad" AutoSize="TextChanges" VerticalOptions="CenterAndExpand" Placeholder="Escriba aquí la novedad" Text="" Margin="15,0"/>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Frame CornerRadius="15" BackgroundColor="White" Margin="5">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="CameraButton_Clicked"/>
+                        </Frame.GestureRecognizers>
+                        <Label Text="Tomar Foto" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" TextColor="DarkGray"/>
+                    </Frame>
+                    <Frame CornerRadius="15" BackgroundColor="White" Margin="5">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="GaleriaButton_Clicked"/>
+                        </Frame.GestureRecognizers>
+                        <Label Text="Seleccionar Foto" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" TextColor="DarkGray"/>
+                    </Frame>
+                </StackLayout>
+
+
+                <ListView x:Name="listView_Fotos" HasUnevenRows="true" HeightRequest="500" VerticalOptions="Start">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal" Margin="10, 0" Padding="10">
+                                    <Image HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Source="{Binding ruta}" WidthRequest="200" HeightRequest="200" Aspect="AspectFit" >
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" CommandParameter="{Binding .}"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

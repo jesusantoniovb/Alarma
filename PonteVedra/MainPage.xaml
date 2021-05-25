@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Alarma.MainPage">
+
+    <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
+        <StackLayout BackgroundColor="#e6e6e6">
+            <Grid>
+                <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
+                    <Frame HeightRequest="150" BackgroundColor="DarkRed" Padding="0" Margin="0">
+
+                    </Frame>
+                </StackLayout>
+                <StackLayout Padding="0" Margin="10,100,10,0" HorizontalOptions="FillAndExpand">
+                    <Frame  BackgroundColor="White" HeightRequest="500" HasShadow="True" Padding="0" Margin="0">
+
+                        <StackLayout>
+
+
+                            <StackLayout Margin="10">
+                                <Label Text="INICIO DE SESIÓN" TextColor="Black" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+                            </StackLayout>
+
+                            <StackLayout Padding="0" Margin="15,10">
+
+                                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame BackgroundColor="DarkRed" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+
+                                        </Frame>
+                                        <Entry Placeholder="Usuario" Text="{Binding User}" x:Name="LblUser" HorizontalOptions="FillAndExpand" Margin="0,0,20,0" TextColor="DarkRed" FontAttributes="None"/>
+
+                                    </StackLayout>
+                                </Frame>
+
+                                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame BackgroundColor="DARKRED" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+
+                                        </Frame>
+                                        <Entry Placeholder="Clave" IsPassword="True" x:Name="LblPass"  HorizontalOptions="FillAndExpand" Margin="0,0,20,0" TextColor="DarkRed" FontAttributes="None"/>
+                                    </StackLayout>
+                                </Frame>
+
+                                <StackLayout  Orientation="Horizontal">
+
+
+                                    <Label Text="Inserte su usuario y clave" TextColor="DarkRed"  HorizontalOptions="EndAndExpand" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+
+
+                                </StackLayout>
+
+                                <Button Text="Iniciar Sesión" BackgroundColor="DarkRed" TextColor="White" CornerRadius="30" Clicked="Button_Clicked" />
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+
+                                </StackLayout>
+
+                                <StackLayout Margin="0,25,0,0" Padding="0">
+                                    <Grid>
+                                        <Image HeightRequest="150" Aspect="AspectFit" Source="logoapp.png"/>
+
+                                    </Grid>
+                                </StackLayout>
+
+                                <StackLayout Margin="0,25" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+
+                                </StackLayout>
+
+                            </StackLayout>
+
+
+                        </StackLayout>
+
+                    </Frame>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

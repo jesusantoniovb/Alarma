@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Alarma.MenuPrincipal">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="logout.png"  Order="Primary" Priority="0" Clicked="Button_Clicked_Cerrar_Sesion"/>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
+            <StackLayout BackgroundColor="#e6e6e6">
+                <Grid>
+                    <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
+                        <Frame HeightRequest="150" BackgroundColor="DarkRed" Padding="0" Margin="0">
+
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Padding="0" Margin="10,100,10,0" HorizontalOptions="FillAndExpand">
+                        
+                        
+                        <Frame  BackgroundColor="White" HeightRequest="500" HasShadow="True" Padding="0" Margin="0">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"></RowDefinition>
+                                    <RowDefinition Height="Auto"></RowDefinition>
+                                    <RowDefinition Height="Auto"></RowDefinition>
+                                    <RowDefinition Height="Auto"></RowDefinition>
+                                    <RowDefinition Height="Auto"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <StackLayout>
+
+
+                                <StackLayout Margin="10" Grid.Row="0">
+                                    <Label  x:Name="LblNombreCompleto" Text="" TextColor="Black" HorizontalOptions="EndAndExpand" FontAttributes="Bold"/>
+                                </StackLayout>
+                            
+                                <StackLayout  Padding="0" Margin="15,10" Orientation="Vertical" HorizontalOptions="Center" Grid.Row="1">
+                                        <StackLayout Orientation="Horizontal" x:Name="BtnAyuda">
+                                            <StackLayout.GestureRecognizers>
+                                                <TapGestureRecognizer Tapped="Button_Clicked_Ayuda"/>
+                                            </StackLayout.GestureRecognizers>
+                                            <Image x:Name="ImgApoyo" HorizontalOptions="Center" Source="apoyo.png" HeightRequest="200" WidthRequest="200" Aspect="AspectFill" TranslationY="-3" Margin="7,2,7,0"/>
+                                        </StackLayout>
+                                        <Button Text="Historial" BackgroundColor="DarkRed" TextColor="White" CornerRadius="15" Clicked="Button_Clicked_Ver_Historial"  Margin="5,5,5,5"/>
+                                        <Button Text="CAMBIO CLAVE" BackgroundColor="DarkRed" TextColor="White" CornerRadius="15" Margin="5,5,5,5" Clicked="Button_Clicked_Cambio"/>
+                                    </StackLayout>
+                                    <StackLayout  Padding="0" Margin="5,5" Orientation="Vertical" HorizontalOptions="Center" Grid.Row="2">
+                                        <StackLayout Orientation="Vertical">
+                                            <StackLayout  Orientation="Vertical">
+                                                <Image x:Name="ImgLogTor" HorizontalOptions="Center" IsVisible="true" Source="logoapp.png" HeightRequest="85" WidthRequest="85" Aspect="AspectFill" />
+                                            </StackLayout>
+                                            <StackLayout  Orientation="Horizontal">
+                                                <Image x:Name="ImgGifCel" Source="gif_celador.gif" IsAnimationPlaying="true" IsVisible="false" WidthRequest="65" HeightRequest="103"></Image>
+                                            </StackLayout>
+
+                                        </StackLayout>
+                                    </StackLayout>
+                                    <StackLayout   HorizontalOptions="Center" Grid.Row="3">
+                                        <Label x:Name="LblEnviando" HorizontalTextAlignment="Center" FontSize="30" FontAttributes="Bold" TextColor="Red" Text="" />
+                                    </StackLayout>
+                                    
+                                    <StackLayout   HorizontalOptions="Center" Grid.Row="4">
+                                            
+                                        
+                                    </StackLayout>
+
+
+
+                            </StackLayout>
+                            </Grid>
+                        </Frame>
+                      
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
