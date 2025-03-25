@@ -15,7 +15,7 @@
 
                         </Frame>
                     </StackLayout>
-                    <StackLayout Padding="0" Margin="10,100,10,0" HorizontalOptions="FillAndExpand">
+                    <StackLayout Padding="0" Margin="10,50,10,0" HorizontalOptions="FillAndExpand">
                         <Frame  BackgroundColor="White" HeightRequest="500" HasShadow="True" Padding="0" Margin="0">
 
                             <StackLayout>
@@ -26,7 +26,7 @@
                                 </StackLayout>
                                 <ScrollView>
                                     <StackLayout Padding="0" Margin="15,10">
-                                        <ListView HeightRequest="125" x:Name="listView_Ayudas">
+                                        <ListView HeightRequest="195" x:Name="listView_Ayudas">
                                             <ListView.ItemTemplate>
                                                 <DataTemplate>
                                                     <ViewCell>
@@ -59,7 +59,7 @@
                                                 <RowDefinition Height="Auto"></RowDefinition>
                                             </Grid.RowDefinitions>
                                             <StackLayout Grid.Row="0">
-                                            <Image HeightRequest="150" Aspect="AspectFit" Source="logoapp.png"/>
+                                                <Image x:Name="ImgLogTor" HeightRequest="80" Aspect="AspectFit" Source="logoapp.png"/>
                                             </StackLayout>
                                             <StackLayout Grid.Row="1">
                                                 <Label x:Name="LblToronto" HorizontalTextAlignment="Center" FontSize="30" FontAttributes="Italic" Text="&quot;Calidad y Excelencia&quot;" />

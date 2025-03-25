@@ -45,15 +45,24 @@
                                     </StackLayout>
                                 </Frame>
 
+                                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame BackgroundColor="DARKRED" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+
+                                        </Frame>
+                                        <Entry Placeholder="Proyecto" IsPassword="True" x:Name="LblProyecto"  HorizontalOptions="FillAndExpand" Margin="0,0,20,0" TextColor="DarkRed" FontAttributes="None"/>
+                                    </StackLayout>
+                                </Frame>
+
                                 <StackLayout  Orientation="Horizontal">
 
 
-                                    <Label Text="Inserte su usuario y clave" TextColor="DarkRed"  HorizontalOptions="EndAndExpand" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+                                    <Label Text="Inserte su usuario, clave y proyecto" TextColor="DarkRed"  HorizontalOptions="EndAndExpand" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
 
 
                                 </StackLayout>
 
-                                <Button Text="Iniciar Sesión" BackgroundColor="DarkRed" TextColor="White" CornerRadius="30" Clicked="Button_Clicked" />
+                                <Button x:Name="boton"  Text="Iniciar Sesión" BackgroundColor="DarkRed" TextColor="White" CornerRadius="30" Clicked="Button_Clicked"/>
                                 <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
 
                                 </StackLayout>
@@ -61,12 +70,11 @@
                                 <StackLayout Margin="0,25,0,0" Padding="0">
                                     <Grid>
                                         <Image HeightRequest="150" Aspect="AspectFit" Source="logoapp.png"/>
-
                                     </Grid>
                                 </StackLayout>
 
                                 <StackLayout Margin="0,25" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-
+                                    <Label  x:Name="Version" Text="1.1.0" TextColor="Black" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
                                 </StackLayout>
 
                             </StackLayout>

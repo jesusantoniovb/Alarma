@@ -5,6 +5,8 @@ using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Alarma.Clases;
+using Plugin.Geolocator;
+using System.IO;
 
 namespace Alarma
 {
@@ -13,6 +15,8 @@ namespace Alarma
     {
 
         public List<DatosUser> usuarios = App.Database.GetNotesAsync().Result;
+        General objeto_general = new General();
+
         public MenuPrincipal()
         {
             InitializeComponent();
@@ -20,6 +24,29 @@ namespace Alarma
             List<DatosUser> usuarios = App.Database.GetNotesAsync().Result;
             BindingContext = this;
             LblNombreCompleto.Text = usuarios[0].NombreCompleto.ToUpper();
+            objeto_general.permiso_localizacion();
+
+            if (usuarios[0].Nivel == "1")
+            {
+                BtnAyudasAdmin.IsVisible = true;
+            }
+            else
+            {
+                BtnAyudasAdmin.IsVisible = false;
+            }
+
+
+
+            try
+            {
+                byte[] Base64Stream = Convert.FromBase64String(usuarios[0].ImgEmpresa);
+                ImgLogTor.Source = ImageSource.FromStream(() => new MemoryStream(Base64Stream));
+            }
+            catch (Exception)
+            {
+                
+            }
+                    
         }
 
         private async void Button_Clicked_Ayuda(object sender, EventArgs e)
@@ -34,13 +61,34 @@ namespace Alarma
             objeto.Token = usuarios[0].Token;
             try
             {
-                var request = new GeolocationRequest(GeolocationAccuracy.Medium);
-                var location = await Geolocation.GetLocationAsync(request);
-                objeto.lat = location.Latitude.ToString();
-                objeto.lon = location.Longitude.ToString();
-                // Use default vibration length
-                
+                Guid myuuid = Guid.NewGuid();
 
+                objeto.id_app = myuuid.ToString();
+
+                var locator = CrossGeolocator.Current;
+                locator.DesiredAccuracy = 50;
+                if (locator.IsGeolocationAvailable)
+                {
+                    if (locator.IsGeolocationEnabled)
+                    {
+                        if (!locator.IsListening)
+                        {
+                            await locator.StartListeningAsync(TimeSpan.FromSeconds(1), 5);
+                        }
+                        var _position = await locator.GetPositionAsync(TimeSpan.FromSeconds(30));
+                        objeto.lat = _position.Latitude.ToString();
+                        objeto.lon = _position.Longitude.ToString();
+                    }
+                    else
+                    {
+                        await DisplayAlert("La ubicación del dispositivo esta inhabilitada", "Activela y luego inicie sesión", "Aceptar");
+                    }
+                }
+                else
+                {
+                    await DisplayAlert("No tiene los permisos para acceder a su ubicación ", "Acepte los permisos y luego inicie sesión", "Aceptar");
+                }
+                // Use default vibration length
                 RootObject_Ayuda ret = new RootObject_Ayuda();
 
                 try
@@ -128,12 +176,17 @@ namespace Alarma
             await Navigation.PopAsync();
         }
 
-        private async void Button_Clicked_Ver_Historial(object sender, EventArgs e)
+        private void Button_Clicked_Ver_Historial(object sender, EventArgs e)
         {
             Navigation.PushAsync(new ModalAyudas());
         }
 
-        private async void Button_Clicked_Agregar_Novedad(object sender, EventArgs e)
+        private void Button_Clicked_Ver_Historial_Admin(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ModalAyudasAdmin());
+        }
+
+        private void Button_Clicked_Agregar_Novedad(object sender, EventArgs e)
         {
             Navigation.PushAsync(new ModalReporteNovedad());
         }
@@ -147,7 +200,4 @@ namespace Alarma
             Navigation.PushAsync(new CambioPass());
         }
     }
-
-
-
 }

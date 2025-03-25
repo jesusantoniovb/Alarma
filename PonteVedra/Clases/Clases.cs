@@ -10,6 +10,7 @@ namespace Alarma.Clases
         public string token { get; set; }
         public string user { get; set; }
         public string pass { get; set; }
+        public string proyecto { get; set; }
         public string model { get; set; }
         public string manufacturer { get; set; }
         public string name { get; set; }
@@ -21,6 +22,7 @@ namespace Alarma.Clases
         public string height { get; set; }
         public string lat { get; set; }
         public string lon { get; set; }
+        public string TokenFirebase { get; set; }
     }
 
     public class SendObject_Cambio_Clave
@@ -47,7 +49,9 @@ namespace Alarma.Clases
     {
         public string Sync { get; set; }
         public string Token { get; set; }
+        public string ImgEmpresa { get; set; }
         public string NombreCompleto { get; set; }
+        public string Nivel { get; set; }
     }
 
     public class SendObject_Ayuda
@@ -55,6 +59,7 @@ namespace Alarma.Clases
         public string Token { get; set; }
         public string lat { get; set; }
         public string lon { get; set; }
+        public string id_app { get; set; }
     }
 
     public class SendObject_ConfirmarAyuda
@@ -86,6 +91,17 @@ namespace Alarma.Clases
         public int Pos { get; set; }
     }
 
+    public class ListadoAyudasAdmin
+    {
+        [PrimaryKey, AutoIncrement]
+        public int ID { get; set; }
+        public string Codigo { get; set; }
+        public string Fecha { get; set; }
+        public string FechaMostrar { get; set; }
+        public bool Estado { get; set; }
+        public int Pos { get; set; }
+    }
+
     public class ListadoFotos
     {
         public int ID { get; set; }
@@ -107,5 +123,10 @@ namespace Alarma.Clases
     {
         public string Sync { get; set; }
         public string Save { get; set; }
+    }
+
+    public class Tokens
+    {
+        public List<string> MyArray { get; set; }
     }
 }

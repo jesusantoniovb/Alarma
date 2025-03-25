@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Alarma.ModalAyudasAdmin"
+             Title="Ayudas registradas">
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
+            <StackLayout BackgroundColor="#e6e6e6">
+                <Grid>
+                    <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
+                        <Frame HeightRequest="150" BackgroundColor="DarkRed" Padding="0" Margin="0">
+
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Padding="0" Margin="10,50,10,0" HorizontalOptions="FillAndExpand">
+                        <Frame  BackgroundColor="White" HeightRequest="500" HasShadow="True" Padding="0" Margin="0">
+
+                            <StackLayout>
+
+
+                                <StackLayout Margin="10">
+                                    <Label Text="AYUDAS REGISTRADAS" TextColor="Black" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+                                </StackLayout>
+                                <ScrollView>
+                                    <StackLayout Padding="0" Margin="15,10">
+                                        <ListView HeightRequest="195" HasUnevenRows="True" x:Name="listView_Ayudas_Admin">
+                                            <ListView.ItemTemplate>
+                                                <DataTemplate>
+                                                    <ViewCell>
+                                                        <StackLayout Orientation="Horizontal" Margin="10, 0" Padding="10">
+                                                            <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand">
+                                                                <Label Text="{Binding FechaMostrar}" FontSize="14" TextColor="DarkGray" HorizontalOptions="FillAndExpand"/>
+                                                            </StackLayout>
+                                                            <Image HorizontalOptions="End" IsVisible="{Binding Estado}" Source="check.png" HeightRequest="25" WidthRequest="25" TranslationY="-3" Aspect="AspectFit" Margin="15,5">
+                                                                <Image.GestureRecognizers>
+                                                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" CommandParameter="{Binding .}"/>
+                                                                </Image.GestureRecognizers>
+                                                            </Image>
+                                                        </StackLayout>
+                                                    </ViewCell>
+                                                </DataTemplate>
+                                            </ListView.ItemTemplate>
+                                        </ListView>
+
+                                    </StackLayout>
+                                </ScrollView>
+                                <StackLayout Padding="0" Margin="15,10">
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+
+                                    </StackLayout>
+
+                                    <StackLayout Margin="0,25,0,0" Padding="0">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto"></RowDefinition>
+                                                <RowDefinition Height="Auto"></RowDefinition>
+                                            </Grid.RowDefinitions>
+                                            <StackLayout Grid.Row="0">
+                                                <Image x:Name="ImgLogTor" HeightRequest="80" Aspect="AspectFit" Source="logoapp.png"/>
+                                            </StackLayout>
+                                            <StackLayout Grid.Row="1">
+                                                <Label x:Name="LblToronto" HorizontalTextAlignment="Center" FontSize="30" FontAttributes="Italic" Text="&quot;Calidad y Excelencia&quot;" />
+                                            </StackLayout>
+
+                                        </Grid>
+                                    </StackLayout>
+
+                                    <StackLayout Margin="0,25" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+
+                                    </StackLayout>
+
+                                </StackLayout>
+
+
+                            </StackLayout>
+
+                        </Frame>
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

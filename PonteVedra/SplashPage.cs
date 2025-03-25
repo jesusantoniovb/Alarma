@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Alarma.Clases;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 
@@ -41,76 +42,99 @@ namespace Alarma
             
             List<DatosUser> usuarios = App.Database.GetNotesAsync().Result;
 
+            string TokenFirebase = Preferences.Get("TokenFirebase", "nada");
+            bool valFirebase = true;
+
+            if (TokenFirebase == "nada")
+            {
+                valFirebase = false;
+            }
+
             if (usuarios.Count > 0)
             {
-                SendObject_ValidarToken objeto = new SendObject_ValidarToken();
-                objeto.Token = usuarios[0].Token;
-
-                RootObject ret = new RootObject();
-
-                try
+                if (TokenFirebase != usuarios[0].TokenFirebase)
                 {
-                    ret = APIContext.Send<RootObject>("usuarios/validar_token.php", "POST", objeto);
+                    valFirebase = false;
+                }
+            }
 
-                    if (ret.Sync == "1")
-                    {
-                        await splashImage.FadeTo(0, 1500);
-                        Application.Current.MainPage = new NavigationPage(new MenuPrincipal());
-                    }
-                    else if (ret.Sync == "0")
-                    {
-                        await DisplayAlert("Fallo de conexión", "No se ha podido establecer una conexión con el servidor.", "OK");
-                    }
-                    else if (ret.Sync == "2")
-                    {
-                        await DisplayAlert("Inicio de sesión fallido", "Por favor vuelva a iniciar sesión.", "OK");
-                        await App.Database.DeleteAllUsuarios();
-                        await splashImage.FadeTo(0, 1500);
-                        Application.Current.MainPage = new NavigationPage(new MainPage());
-                    }
-                    else if (ret.Sync == "3")
-                    {
-                        await DisplayAlert("Versión antigua", "Por favor actualice la aplicación.", "OK");
-                        await App.Database.DeleteAllUsuarios();
+            if (valFirebase)
+            {
+                if (usuarios.Count > 0)
+                {
+                    SendObject_ValidarToken objeto = new SendObject_ValidarToken();
+                    objeto.Token = usuarios[0].Token;
 
-                        try
+                    RootObject ret = new RootObject();
+                    string test = "0";
+                    try
+                    {
+                        ret = APIContext.Send<RootObject>("usuarios/validar_token.php", "POST", objeto);
+                        if (ret.Sync == "1")
                         {
-                            switch (Device.RuntimePlatform)
+                            await splashImage.FadeTo(0, 1500);
+                            Application.Current.MainPage = new NavigationPage(new MenuPrincipal());
+                        }
+                        else if (ret.Sync == "0")
+                        {
+                            await DisplayAlert("Fallo de conexión", "No se ha podido establecer una conexión con el servidor.", "OK");
+                        }
+                        else if (ret.Sync == "2")
+                        {
+                            await DisplayAlert("Inicio de sesión fallido", "Por favor vuelva a iniciar sesión.", "OK");
+                            await App.Database.DeleteAllUsuarios();
+                            await splashImage.FadeTo(0, 1500);
+                            Application.Current.MainPage = new NavigationPage(new MainPage());
+                        }
+                        else if (ret.Sync == "3")
+                        {
+                            await DisplayAlert("Versión antigua", "Por favor actualice la aplicación.", "OK");
+                            await App.Database.DeleteAllUsuarios();
+
+                            try
                             {
-                                case Device.Android:
-                                    {
-                                        Device.OpenUri(new Uri("https://play.google.com/store/apps/details?id=com.companyname.Alarma"));
-                                        break;
-                                    }
-                                case Device.iOS:
-                                    {
-                                        Device.OpenUri(new Uri("https://play.google.com/store/apps/details?id=com.companyname.Alarma"));
-                                        break;
-                                    }
+                                switch (Device.RuntimePlatform)
+                                {
+                                    case Device.Android:
+                                        {
+                                            Device.OpenUri(new Uri("https://play.google.com/store/apps/details?id=com.companyname.Alarma"));
+                                            break;
+                                        }
+                                    case Device.iOS:
+                                        {
+                                            Device.OpenUri(new Uri("https://play.google.com/store/apps/details?id=com.companyname.Alarma"));
+                                            break;
+                                        }
+                                }
                             }
-                        }
-                        catch (Exception ex)
-                        {
+                            catch (Exception ex)
+                            {
 
+                            }
+                            await splashImage.FadeTo(0, 1500);
+                            Application.Current.MainPage = new NavigationPage(new MainPage());
                         }
-                        await splashImage.FadeTo(0, 1500);
-                        Application.Current.MainPage = new NavigationPage(new MainPage());
+                    }
+                    catch (Exception ex)
+                    {
+                        if (ex.Message == "Error: NameResolutionFailure")
+                        {
+                            await DisplayAlert("Error de conexión", "Compruebe su conexión a Internet y vuelva a intentarlo", "OK");
+                        }
+                        else if (ex.Message == "Error: ConnectFailure (Network is unreachable)")
+                        {
+                            await DisplayAlert("Error de conexión", "Compruebe su conexión a Internet y vuelva a intentarlo", "OK");
+                        }
+                        else
+                        {
+                            await DisplayAlert("Error.", ex.Message, "OK");
+                        }
                     }
                 }
-                catch (Exception ex)
+                else
                 {
-                    if (ex.Message == "Error: NameResolutionFailure")
-                    {
-                        await DisplayAlert("Error de conexión", "Compruebe su conexión a Internet y vuelva a intentarlo", "OK");
-                    }
-                    else if (ex.Message == "Error: ConnectFailure (Network is unreachable)")
-                    {
-                        await DisplayAlert("Error de conexión", "Compruebe su conexión a Internet y vuelva a intentarlo", "OK");
-                    }
-                    else
-                    {
-                        await DisplayAlert("Error.", ex.Message, "OK");
-                    }
+                    await splashImage.FadeTo(0, 1500);
+                    Application.Current.MainPage = new NavigationPage(new MainPage());
                 }
             }
             else

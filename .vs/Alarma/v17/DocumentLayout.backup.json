@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\MSI\\source\\repos\\Alarma\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DC2B4479-B7E2-4EE5-BEE4-F6A329FD2504}|PonteVedra\\Alarma.csproj|c:\\users\\msi\\source\\repos\\alarma\\pontevedra\\mainpage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{DC2B4479-B7E2-4EE5-BEE4-F6A329FD2504}|PonteVedra\\Alarma.csproj|solutionrelative:pontevedra\\mainpage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC2B4479-B7E2-4EE5-BEE4-F6A329FD2504}|PonteVedra\\Alarma.csproj|c:\\users\\msi\\source\\repos\\alarma\\pontevedra\\mainpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{DC2B4479-B7E2-4EE5-BEE4-F6A329FD2504}|PonteVedra\\Alarma.csproj|solutionrelative:pontevedra\\mainpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC2B4479-B7E2-4EE5-BEE4-F6A329FD2504}|PonteVedra\\Alarma.csproj|c:\\users\\msi\\source\\repos\\alarma\\pontevedra\\menuprincipal.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{DC2B4479-B7E2-4EE5-BEE4-F6A329FD2504}|PonteVedra\\Alarma.csproj|solutionrelative:pontevedra\\menuprincipal.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC2B4479-B7E2-4EE5-BEE4-F6A329FD2504}|PonteVedra\\Alarma.csproj|c:\\users\\msi\\source\\repos\\alarma\\pontevedra\\clases\\apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC2B4479-B7E2-4EE5-BEE4-F6A329FD2504}|PonteVedra\\Alarma.csproj|solutionrelative:pontevedra\\clases\\apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC2B4479-B7E2-4EE5-BEE4-F6A329FD2504}|PonteVedra\\Alarma.csproj|c:\\users\\msi\\source\\repos\\alarma\\pontevedra\\menuprincipal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC2B4479-B7E2-4EE5-BEE4-F6A329FD2504}|PonteVedra\\Alarma.csproj|solutionrelative:pontevedra\\menuprincipal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\Alarma\\PonteVedra\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "PonteVedra\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\Alarma\\PonteVedra\\MainPage.xaml.cs",
+              "RelativeToolTip": "PonteVedra\\MainPage.xaml.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAIwEAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T20:30:32.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\Alarma\\PonteVedra\\MainPage.xaml",
+              "RelativeDocumentMoniker": "PonteVedra\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\Alarma\\PonteVedra\\MainPage.xaml",
+              "RelativeToolTip": "PonteVedra\\MainPage.xaml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAEwAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-17T20:30:31.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MenuPrincipal.xaml",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\Alarma\\PonteVedra\\MenuPrincipal.xaml",
+              "RelativeDocumentMoniker": "PonteVedra\\MenuPrincipal.xaml",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\Alarma\\PonteVedra\\MenuPrincipal.xaml",
+              "RelativeToolTip": "PonteVedra\\MenuPrincipal.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-17T20:20:34.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "APIContext.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\Alarma\\PonteVedra\\Clases\\APIContext.cs",
+              "RelativeDocumentMoniker": "PonteVedra\\Clases\\APIContext.cs",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\Alarma\\PonteVedra\\Clases\\APIContext.cs",
+              "RelativeToolTip": "PonteVedra\\Clases\\APIContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T20:20:01.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MenuPrincipal.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\Alarma\\PonteVedra\\MenuPrincipal.xaml.cs",
+              "RelativeDocumentMoniker": "PonteVedra\\MenuPrincipal.xaml.cs",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\Alarma\\PonteVedra\\MenuPrincipal.xaml.cs",
+              "RelativeToolTip": "PonteVedra\\MenuPrincipal.xaml.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAIwEEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T16:41:58.723Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

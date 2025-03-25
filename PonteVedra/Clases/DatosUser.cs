@@ -10,7 +10,10 @@ namespace Alarma.Clases
         public string User { get; set; }
         public string Pass { get; set; }
         public string NombreCompleto { get; set; }
+        public string ImgEmpresa { get; set; }
         public DateTime Date { get; set; }
         public string Token { get; set; }
+        public string TokenFirebase { get; set; }
+        public string Nivel { get; set; }
     }
 }

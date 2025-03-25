@@ -1,28 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jesus\\source\\repos\\Ponteverdi\\AppPonteverdi\\PonteVedrav3\\V3\\PonteVedra\\PonteVedra.iOS\\Alarma.iOS.csproj": {}
+    "C:\\Users\\MSI\\source\\repos\\Alarma\\PonteVedra.iOS\\Alarma.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jesus\\source\\repos\\Ponteverdi\\AppPonteverdi\\PonteVedrav3\\V3\\PonteVedra\\PonteVedra.iOS\\Alarma.iOS.csproj": {
+    "C:\\Users\\MSI\\source\\repos\\Alarma\\PonteVedra.iOS\\Alarma.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jesus\\source\\repos\\Ponteverdi\\AppPonteverdi\\PonteVedrav3\\V3\\PonteVedra\\PonteVedra.iOS\\Alarma.iOS.csproj",
-        "projectName": "Alarma.iOS",
-        "projectPath": "C:\\Users\\jesus\\source\\repos\\Ponteverdi\\AppPonteverdi\\PonteVedrav3\\V3\\PonteVedra\\PonteVedra.iOS\\Alarma.iOS.csproj",
-        "packagesPath": "C:\\Users\\jesus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jesus\\source\\repos\\Ponteverdi\\AppPonteverdi\\PonteVedrav3\\V3\\PonteVedra\\PonteVedra.iOS\\obj\\",
+        "projectUniqueName": "C:\\Users\\MSI\\source\\repos\\Alarma\\PonteVedra.iOS\\Alarma.iOS.csproj",
+        "projectName": "PonteVedra.iOS",
+        "projectPath": "C:\\Users\\MSI\\source\\repos\\Alarma\\PonteVedra.iOS\\Alarma.iOS.csproj",
+        "packagesPath": "C:\\Users\\MSI\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MSI\\source\\repos\\Alarma\\PonteVedra.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
+        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jesus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MSI\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "xamarinios10"
@@ -34,29 +33,41 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\jesus\\source\\repos\\Ponteverdi\\AppPonteverdi\\PonteVedrav3\\V3\\PonteVedra\\PonteVedra\\Alarma.csproj": {
-                "projectPath": "C:\\Users\\jesus\\source\\repos\\Ponteverdi\\AppPonteverdi\\PonteVedrav3\\V3\\PonteVedra\\PonteVedra\\Alarma.csproj"
+              "C:\\Users\\MSI\\source\\repos\\Alarma\\PonteVedra\\Alarma.csproj": {
+                "projectPath": "C:\\Users\\MSI\\source\\repos\\Alarma\\PonteVedra\\Alarma.csproj"
               }
             }
           }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "xamarinios10": {
           "dependencies": {
+            "Xam.Plugin.Geolocator": {
+              "target": "Package",
+              "version": "[4.5.0.6, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.3.1, )"
+              "version": "[1.6.1, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.5.0.495, )"
+              "version": "[5.0.0.2244, )"
             }
           }
         }
       },
       "runtimes": {
         "win": {
+          "#import": []
+        },
+        "win-arm64": {
           "#import": []
         },
         "win-x64": {
@@ -67,31 +78,29 @@
         }
       }
     },
-    "C:\\Users\\jesus\\source\\repos\\Ponteverdi\\AppPonteverdi\\PonteVedrav3\\V3\\PonteVedra\\PonteVedra\\Alarma.csproj": {
+    "C:\\Users\\MSI\\source\\repos\\Alarma\\PonteVedra\\Alarma.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jesus\\source\\repos\\Ponteverdi\\AppPonteverdi\\PonteVedrav3\\V3\\PonteVedra\\PonteVedra\\Alarma.csproj",
+        "projectUniqueName": "C:\\Users\\MSI\\source\\repos\\Alarma\\PonteVedra\\Alarma.csproj",
         "projectName": "Alarma",
-        "projectPath": "C:\\Users\\jesus\\source\\repos\\Ponteverdi\\AppPonteverdi\\PonteVedrav3\\V3\\PonteVedra\\PonteVedra\\Alarma.csproj",
-        "packagesPath": "C:\\Users\\jesus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jesus\\source\\repos\\Ponteverdi\\AppPonteverdi\\PonteVedrav3\\V3\\PonteVedra\\PonteVedra\\obj\\",
+        "projectPath": "C:\\Users\\MSI\\source\\repos\\Alarma\\PonteVedra\\Alarma.csproj",
+        "packagesPath": "C:\\Users\\MSI\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MSI\\source\\repos\\Alarma\\PonteVedra\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jesus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MSI\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -104,7 +113,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "netstandard2.0": {
@@ -122,19 +137,23 @@
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[12.0.3, )"
+              "version": "[13.0.1, )"
+            },
+            "Xam.Plugin.Geolocator": {
+              "target": "Package",
+              "version": "[4.5.0.6, )"
             },
             "Xam.Plugin.Media": {
               "target": "Package",
-              "version": "[4.0.1.5, )"
+              "version": "[5.0.1, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.5.3.2, )"
+              "version": "[1.6.1, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.6.0.847, )"
+              "version": "[5.0.0.2244, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
@@ -147,11 +166,12 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

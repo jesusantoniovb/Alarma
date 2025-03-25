@@ -34,10 +34,10 @@ namespace Alarma
         protected override void OnStart()
         {
             // Registra
-            BackgroundAggregatorService.Add(() => new BackgroundService(60));
+            //BackgroundAggregatorService.Add(() => new BackgroundService(60));
 
             // Inicia
-            BackgroundAggregatorService.StartBackgroundService();
+            //BackgroundAggregatorService.StartBackgroundService();
         }
 
         protected override void OnSleep()

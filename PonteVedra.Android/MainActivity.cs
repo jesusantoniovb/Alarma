@@ -8,6 +8,8 @@ using Android.OS;
 using Plugin.CurrentActivity;
 using Matcha.BackgroundService.Droid;
 using Alarma;
+using Android.Gms.Common;
+using Xamarin.Essentials;
 
 namespace Alarma.Droid
 {
@@ -20,6 +22,9 @@ namespace Alarma.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(savedInstanceState);
+
+            IsPlayServicesAvailable();
+
             CrossCurrentActivity.Current.Init(this, savedInstanceState);
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
@@ -34,6 +39,13 @@ namespace Alarma.Droid
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
             Plugin.Permissions.PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
+
+        public void IsPlayServicesAvailable()
+        {
+            int resultCode = GoogleApiAvailability.Instance.IsGooglePlayServicesAvailable(this);
+            bool isGooglePlayService = resultCode != ConnectionResult.Success;
+            Preferences.Set("isGooglePlayService", isGooglePlayService);
         }
     }
 }

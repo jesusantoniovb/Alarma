@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "403943908766",
+    "project_id": "alarmas-teiseg",
+    "storage_bucket": "alarmas-teiseg.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:403943908766:android:f35557937c8ff2b2e7a28f",
+        "android_client_info": {
+          "package_name": "com.companyname.Alarma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "403943908766-0unle9t4gd4tld0p10fnptp1l0qva6q2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGV9SrqV5KtU7zrGPw9jN7vkuAO4SRzvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "403943908766-0unle9t4gd4tld0p10fnptp1l0qva6q2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

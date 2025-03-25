@@ -18,10 +18,10 @@
 
                         </Frame>
                     </StackLayout>
-                    <StackLayout Padding="0" Margin="10,100,10,0" HorizontalOptions="FillAndExpand">
+                    <StackLayout Padding="0" Margin="10,50,10,0" HorizontalOptions="FillAndExpand">
                         
                         
-                        <Frame  BackgroundColor="White" HeightRequest="500" HasShadow="True" Padding="0" Margin="0">
+                        <Frame  BackgroundColor="White" HeightRequest="570" HasShadow="True" Padding="0" Margin="0">
                             <Grid>
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="Auto"></RowDefinition>
@@ -44,8 +44,9 @@
                                             </StackLayout.GestureRecognizers>
                                             <Image x:Name="ImgApoyo" HorizontalOptions="Center" Source="apoyo.png" HeightRequest="200" WidthRequest="200" Aspect="AspectFill" TranslationY="-3" Margin="7,2,7,0"/>
                                         </StackLayout>
-                                        <Button Text="Historial" BackgroundColor="DarkRed" TextColor="White" CornerRadius="15" Clicked="Button_Clicked_Ver_Historial"  Margin="5,5,5,5"/>
-                                        <Button Text="CAMBIO CLAVE" BackgroundColor="DarkRed" TextColor="White" CornerRadius="15" Margin="5,5,5,5" Clicked="Button_Clicked_Cambio"/>
+                                        <Button Text="Ayudas realizadas" BackgroundColor="DarkRed" TextColor="White" CornerRadius="15" Clicked="Button_Clicked_Ver_Historial"  Margin="5,5,5,5"/>
+                                        <Button Text="Historial de ayudas" x:Name="BtnAyudasAdmin" BackgroundColor="DarkRed" TextColor="White" CornerRadius="15" Clicked="Button_Clicked_Ver_Historial_Admin"  Margin="5,5,5,5"/>
+                                        <Button Text="Cambio de Clave" BackgroundColor="DarkRed" TextColor="White" CornerRadius="15" Margin="5,5,5,5" Clicked="Button_Clicked_Cambio"/>
                                     </StackLayout>
                                     <StackLayout  Padding="0" Margin="5,5" Orientation="Vertical" HorizontalOptions="Center" Grid.Row="2">
                                         <StackLayout Orientation="Vertical">
@@ -61,15 +62,12 @@
                                     <StackLayout   HorizontalOptions="Center" Grid.Row="3">
                                         <Label x:Name="LblEnviando" HorizontalTextAlignment="Center" FontSize="30" FontAttributes="Bold" TextColor="Red" Text="" />
                                     </StackLayout>
-                                    
+
                                     <StackLayout   HorizontalOptions="Center" Grid.Row="4">
-                                            
-                                        
+
+
                                     </StackLayout>
-
-
-
-                            </StackLayout>
+                                </StackLayout>
                             </Grid>
                         </Frame>
                       

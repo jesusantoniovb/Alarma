@@ -23,6 +23,15 @@ namespace Alarma
         public CambioPass()
         {
             InitializeComponent();
+            try
+            {
+                byte[] Base64Stream = Convert.FromBase64String(usuarios[0].ImgEmpresa);
+                ImgLogTor.Source = ImageSource.FromStream(() => new MemoryStream(Base64Stream));
+            }
+            catch (Exception)
+            {
+
+            }
         }
 
         private async void Button_Clicked(object sender, EventArgs e)

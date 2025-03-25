@@ -71,7 +71,7 @@
 
                                 <StackLayout Margin="0,25,0,0" Padding="0">
                                     <Grid>
-                                        <Image HeightRequest="150" Aspect="AspectFit" Source="logoapp.png"/>
+                                        <Image x:Name="ImgLogTor" HeightRequest="150" Aspect="AspectFit" Source="logoapp.png"/>
 
                                     </Grid>
                                 </StackLayout>

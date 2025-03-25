@@ -7,6 +7,7 @@ using System.Collections.ObjectModel;
 using Alarma.Clases;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.IO;
 
 namespace Alarma
 {
@@ -16,20 +17,38 @@ namespace Alarma
         public ObservableCollection<ListadoAyudas> datos_listado_ayudas = new ObservableCollection<ListadoAyudas>();
         public ListadoAyudas res_listado_ayudas = new ListadoAyudas();
 
-        List<ListadoAyudas> ciudadesTors = new List<ListadoAyudas>();
         public List<DatosUser> usuarios = App.Database.GetNotesAsync().Result;
 
         public ModalAyudas()
         {
             InitializeComponent();
-
             SendObject_Ayuda objeto = new SendObject_Ayuda();
             List<DatosUser> usuarios = App.Database.GetNotesAsync().Result;
             objeto.Token = usuarios[0].Token;
+            try
+            {
+                byte[] Base64Stream = Convert.FromBase64String(usuarios[0].ImgEmpresa);
+                ImgLogTor.Source = ImageSource.FromStream(() => new MemoryStream(Base64Stream));
+            }
+            catch (Exception)
+            {
+
+            }
+
+/*            List<ListadoAyudas> parts = new List<ListadoAyudas>();
+
+            // Add parts to the list.
+            parts.Add(new ListadoAyudas() { ID = 1, Codigo = "XXX", Fecha = "XXX", FechaMostrar = "XXX", Estado = true, Pos = 1 });
+
+            listView_Ayudas.ItemsSource = parts;
+
+*/
+
 
             try
             {
                 datos_listado_ayudas = APIContext.Send<ObservableCollection<ListadoAyudas>>("ayuda/ayudas.php", "POST", objeto);
+                listView_Ayudas.ItemsSource = datos_listado_ayudas;
             }
             catch (Exception ex)
             {
@@ -46,7 +65,7 @@ namespace Alarma
                     DisplayAlert("Error.", ex.Message, "OK");
                 }
             }
-            listView_Ayudas.ItemsSource = datos_listado_ayudas;
+
         }
 
         private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
