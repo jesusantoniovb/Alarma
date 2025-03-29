@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Alarma")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e27b700c7dae787d702d9bb300b0ed9a38ff333")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bbeaaeb215b352ff33b1c4ba69ff60fd5f904a0c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Alarma")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Alarma")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

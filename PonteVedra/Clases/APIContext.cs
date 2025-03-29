@@ -10,7 +10,7 @@ namespace Alarma.Clases
 {
     public static class APIContext
     {
-        public const string ApiURL = "https://app.guardcontrol.co/paniccontrol/api/V1.0.0/";
+        public const string ApiURL = "https://app.guardcontrol.co/paniccontrol/api/V1.1.0/";
 
         public static T Send<T>(string url, string Metodo, object Body = null, List<string> header = null)
         {

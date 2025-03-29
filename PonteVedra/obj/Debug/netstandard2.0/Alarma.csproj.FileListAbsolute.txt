@@ -55,3 +55,4 @@ C:\Users\MSI\source\repos\Alarma\PonteVedra\obj\Debug\netstandard2.0\Alarma.dll
 C:\Users\MSI\source\repos\Alarma\PonteVedra\obj\Debug\netstandard2.0\refint\Alarma.dll
 C:\Users\MSI\source\repos\Alarma\PonteVedra\obj\Debug\netstandard2.0\Alarma.pdb
 C:\Users\MSI\source\repos\Alarma\PonteVedra\obj\Debug\netstandard2.0\ref\Alarma.dll
+C:\Users\MSI\source\repos\Alarma\PonteVedra\obj\Debug\netstandard2.0\Alarma.sourcelink.json
